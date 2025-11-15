@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rami & Saidou">
+    <meta name="description" content="Découvrez la Libye - Le trésor caché de la Méditerranée. Explorez Tripoli, Leptis Magna et le désert du Sahara">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libye - Agence de voyages Rami & Saidou</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>✈️Agence de voyages - Rami & Saidou</h1>
+                <p class="tagline">Explorez le monde avec nous</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="page1.html">Destinations</a></li>
+                    <li><a href="contact.html" class="active" > Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+     <style>
+        /* New styles only for contact page */
+        .contact-intro {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #7f8c8d;
+        }
+        
+        .form-container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+        
+        input, textarea, select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+        }
+        
+        .btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: background-color 0.3s;
+            display: block;
+            width: 100%;
+        }
+        
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        
+        .success-message {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-bottom: 1.5rem;
+            display: none;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .contact-item {
+            flex: 1;
+            min-width: 200px;
+            margin: 1rem;
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .contact-item h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-info {
+                flex-direction: column;
+            }
+        }
+    </style>
+    
+     <main>
+         <h1>Contactez-nous</h1>
+    <p class="contact-intro">Nous serions ravis de vous aider à planifier votre prochain voyage en Libye. Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
+
+    <div class="success-message" id="successMessage">
+        Merci ! Votre message a été envoyé avec succès. Nous vous contacterons bientôt.
+    </div>
+
+    <div class="form-container">
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="nom">Nom *</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="prenom">Prénom *</label>
+                <input type="text" id="prenom" name="prenom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telephone">Numéro de téléphone *</label>
+                <input type="tel" id="telephone" name="telephone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <button type="submit" class="btn">Envoyer votre demande</button>
+        </form>
+    </div>
+
+    <div class="contact-info">
+         <div class="contact-item">
+    <h3>📍 Adresse</h3>
+    <p>Bd Majida Boulila, Sfax 3029, Tunisie</p>
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6557.292028230567!2d10.7497035!3d34.7393161!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1301d32b2a682869%3A0x14f5006b52867f28!2sSfax%20Faculty%20of%20Medicine!5e0!3m2!1sen!2stn!4v1763201483545!5m2!1sen!2stn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+</div>
+        <div class="contact-item">
+            <h3>📱 Suivez-nous</h3>
+            <div style="display:flex; justify-content:center; gap:20px;">
+    <a href="https://facebook.com" target="_blank">
+        <img src="images/facebook.png" style="width:40px; height:40px; object-fit:contain;" />
+    </a>
+    <a href="https://instagram.com" target="_blank">
+        <img src="images/insta.jpg" style="width:40px; height:40px; object-fit:contain;" />
+    </a>
+</div>
+            <p><a href="https://facebook.com" target="_blank"></a></p>
+            <p><a href="https://instagram.com" target="_blank"></a></p>
+        </div>
+
+        <div class="contact-item">
+            <h3>✉️ Email</h3>
+            <p>contact@ramisaidou.com</p>
+        </div>
+
+        <div class="contact-item">
+            <h3>📞 Téléphone</h3>
+            <p>+216 98 765 432</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Agence de voyages Rami & Saidou. Tous droits réservés.</p>
+</footer>
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        document.getElementById('successMessage').style.display = 'block';
+        this.reset();
+        window.scrollTo(0, 0);
+    });
+</script>
+
+</body>
+</html>
